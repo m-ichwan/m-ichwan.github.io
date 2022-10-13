@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: blue;
+    justify-content: space-around;
+    padding: 13px 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-between;
+    margin-left: 300px;
+
+}
+h1 {
+    margin-right: 200px;
+    font-size: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: .8em;
+    
+}
+
+.satu img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.container h2 {
+    margin: 20px 0;
+    margin-bottom: 2px;
+}
+.container span {
+    font-size: 14px;
+}
+.dua .tentang {
+    display: flex;
+    justify-content: center;
+}
+
+.dua .tentang p {
+    font-size: 14px;
+    width: 500px;
+    /* background-color: #aaaa; */
+    margin: 15px;
+    
+    
+    
+    
+}
+
+
+/* Portfolio */
+.bingkai {
+    margin: auto;
+    width: 550px;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+}
+
+.tiga .card {
+    /* margin: auto; */
+    margin-top: 40px;
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: #f8f2f2;
+    border-radius: 4px;
+    padding: 10px;
+    /* margin: 20px; */
+
+}
+.card img {
+    width: 100px;
+}
+.card p {
+    font-size: 11px;
+}
+
+
+/* contact me */
+
+.empat form{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+}
+.empat label {
+    text-align: left;
+    padding-top: 20px;
+}
+.empat input {
+    outline: none;
+    border: none;
+    background: #f8f2f2;
+    padding-top: 20px;
+
+}
+.empat textarea {
+    border: 1px solid blue;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #fcf7f7;
+    border-radius: 10px;
+}
+
+form .from-border {
+    width: 500px;
+    height: 1px;
+    background: -webkit-linear-gradient(left, rgb(174, 194, 209), blue );
+}
+
+.empat form button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.lima footer {
+    color: white;
+    font-size: 13px;
+    padding: 20px;
+}
+.lima footer a {
+    color: white;
+}
+
+
+
+
+/* container */
+.container {
+    /* height: 400px; */
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(228, 239, 248);
+}
+.satu {
+    height: 350px;
+}
+
+ .dua{
+    background-color: #f8f2f2;
+    padding-top: 100px;
+    box-sizing: border-box;
+    height: 400px;
+}
+.empat {
+    padding-bottom: 50px;
+    background-color: #f8f2f2;
+
+}
+.lima {
+    background-color: blue;
+    padding-top: 0;
+
+}
