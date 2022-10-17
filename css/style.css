@@ -6,6 +6,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* navbar */
 nav {
     display: flex;
     background-color: blue;
@@ -13,69 +15,87 @@ nav {
     padding: 13px 0;
     color: white;
 }
-
 nav ul {
     display: flex;
     list-style: none;
     width: 25%;
     justify-content: space-between;
     margin-left: 300px;
-
 }
 h1 {
     margin-right: 200px;
     font-size: 20px;
 }
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: .8em;
-    
+    font-size: .8em;   
 }
+    /* animasi link  */
+nav a:hover,
+footer a:hover {
+    background-color: aqua;
+    color: black;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+a {
+    transition: .5s;
+    color: white;
+}
+/* akhir navbar */
 
+
+
+/* container satu */
 .satu img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
-.container h2 {
+.satu h2 {
     margin: 20px 0;
     margin-bottom: 2px;
 }
-.container span {
+.satu span {
     font-size: 14px;
+}
+/* akhir container satu */
+
+
+
+/* container dua */
+    /* about me */
+.dua h2 {
+    margin-top: -60px;
+    margin-bottom: 60px;
 }
 .dua .tentang {
     display: flex;
     justify-content: center;
 }
-
 .dua .tentang p {
     font-size: 14px;
     width: 500px;
-    /* background-color: #aaaa; */
-    margin: 15px;
-    
-    
-    
-    
+    margin: 15px;      
 }
+/* akhir container dua */
 
 
-/* Portfolio */
+
+/* container tiga */
+    /* Portfolio */
 .bingkai {
     margin: auto;
     width: 550px;
-    /* background-color: black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 50px;
 
 }
-
 .tiga .card {
-    /* margin: auto; */
     margin-top: 40px;
     width: 100px;
     height: 150px;
@@ -83,8 +103,6 @@ nav ul li a {
     background-color: #f8f2f2;
     border-radius: 4px;
     padding: 10px;
-    /* margin: 20px; */
-
 }
 .card img {
     width: 100px;
@@ -92,43 +110,58 @@ nav ul li a {
 .card p {
     font-size: 11px;
 }
+/* akhir container tiga */
 
 
-/* contact me */
+/* container empat */
 
-.empat form{
+.empat h2{
+    margin: 20px 0;
+}
+.empat ul li {
+    margin: 12px;
+}
+
+/* akhir container empat */
+
+
+
+
+
+
+
+/* container lima */
+    /* contact me */
+.lima form{
     align-items: left;
     display: flex;
     flex-direction: column;
     width: 500px;
     margin: auto;
 }
-.empat label {
+.lima label {
     text-align: left;
     padding-top: 20px;
 }
-.empat input {
+.lima input {
     outline: none;
     border: none;
-    background: #f8f2f2;
+    background: rgb(228, 239, 248);
     padding-top: 20px;
-
 }
-.empat textarea {
+.lima textarea {
     border: 1px solid blue;
     height: 100px;
     margin-top: 20px;
-    background-color: #fcf7f7;
+    background-color: rgb(228, 239, 248);
     border-radius: 10px;
 }
-
 form .from-border {
     width: 500px;
     height: 1px;
     background: -webkit-linear-gradient(left, rgb(174, 194, 209), blue );
 }
-
-.empat form button {
+.lima form button {
     width: 100px;
     height: 30px;
     margin-top: 20px;
@@ -137,22 +170,28 @@ form .from-border {
     color: white;
     border-radius: 10px;
 }
+    /* animasi button */
+button:hover {
+    box-shadow: 0 0 5px 1px aqua;
+    font-size: 16px;
+}
+/* akhir container lima */
 
-.lima footer {
+
+
+/* container enam */
+    /* footer */
+.enam footer {
     color: white;
     font-size: 13px;
     padding: 20px;
 }
-.lima footer a {
-    color: white;
-}
-
+/* akhir container enam */
 
 
 
 /* container */
 .container {
-    /* height: 400px; */
     text-align: center;
     padding-top: 20px;
     background-color: rgb(228, 239, 248);
@@ -168,11 +207,14 @@ form .from-border {
     height: 400px;
 }
 .empat {
-    padding-bottom: 50px;
     background-color: #f8f2f2;
-
+    padding-bottom: 100px;
 }
+
 .lima {
+    padding-bottom: 50px;
+}
+.enam {
     background-color: blue;
     padding-top: 0;
 
