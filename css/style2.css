@@ -102,7 +102,7 @@
 .next, .prev {
     width: 50px;
     height: 50px;
-    background-image: url(../../img/next.png);
+    background-image: url(img/next.png);
     position: absolute;
     text-indent: -9999px;
     
@@ -110,7 +110,7 @@
     opacity: 0;
 }
 .prev {
-    background-image: url(../../img/back.png);
+    background-image: url(img/back.png);
     margin-left: -100px;
 }
 
