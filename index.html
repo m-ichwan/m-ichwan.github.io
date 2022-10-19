@@ -10,32 +10,43 @@
 </head>
 <body>
     <nav>
+        <div class="navbar">
         <div class="logo">
             <h1>M. Ichwan Nur Rosidin</h1>
         </div>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
         </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     </nav>
 
-    <div class="container satu">
+    <div class="container satu" id="Home">
         <img src="img/profile.png" alt="">
         <h2>M. Ichwan Nur Rosidin</h2>
         <span>Rebahan | Programmer</span>
     </div>
-    <div class="container dua">
+    <div class="container dua" id="About">
         <h2>About Me</h2>
+        <div class="garis"></div>
         <div class="tentang">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod explicabo fugiat sunt, impedit suscipit atque praesentium quaerat eius. Minus esse sapiente corrupti odit ut nam hic inventore. Amet totam veritatis cum dignissimos dolores est architecto odio eum earum molestias consequuntur dolorem nostrum, dolorum, fugiat expedita assumenda laboriosam saepe quia autem consectetur ipsum officiis. Veritatis, labore quae veniam porro accusantium quaerat fugit pariatur voluptatum animi quo mollitia sunt quis! Eligendi.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, eius commodi exercitationem eos cumque minima nihil facere molestias culpa delectus ipsam officiis nulla asperiores, repudiandae, odit beatae! Explicabo nobis magni, suscipit neque porro consequatur laboriosam pariatur consectetur cum cupiditate deserunt ea veritatis illo? Ex magnam voluptatem dicta nisi nostrum beatae id, aut consectetur, vitae ullam amet minus tempore adipisci et itaque provident repellat atque dignissimos impedit est. Voluptas, dolorem maxime?</p>
         </div>
     </div>
-    <div class="container tiga">
+    <div class="container tiga" id="Portfolio">
         <h2>Portfolio</h2>
+        <div class="garis"></div>
         <div class="bingkai">
             <div class="card">
                 <img src="img/1.png" alt="">
@@ -73,13 +84,14 @@
         
     </div>
 
-    <div class="container empat">
+    <div class="container empat" id="Gallery">
         <h2>MyGallery</h2>
+        <div class="garis"></div>
         <ul class="gallery">
             <li>
                 <a href="#gambar-1">
                     <img src="img/thumb/1.png" alt="1">
-                    <span>Biru Laut</span>
+                    <span>Bali</span>
                 </a>
                 <div class="overlay" id="gambar-1">
                     <a href="#" class="close">X close</a>
@@ -91,7 +103,7 @@
             <li>
                 <a href="#gambar-2">
                     <img src="img/thumb/2.png" alt="2">
-                    <span>Ungu</span>
+                    <span>Motor</span>
                 </a>
                 <div class="overlay" id="gambar-2">
                     <a href="#" class="close">X close</a>
@@ -103,7 +115,7 @@
             <li>
                 <a href="#gambar-3">
                     <img src="img/thumb/3.png" alt="3">
-                    <span>Hijau</span>
+                    <span>Sepatu</span>
                 </a>
                 <div class="overlay" id="gambar-3">
                     <a href="#" class="close">X close</a>
@@ -115,7 +127,7 @@
             <li>
                 <a href="#gambar-4">
                     <img src="img/thumb/4.png" alt="4">
-                    <span>Hitam</span>
+                    <span>Lampu</span>
                 </a>
                 <div class="overlay" id="gambar-4">
                     <a href="#" class="close">X close</a>
@@ -127,7 +139,7 @@
             <li>
                 <a href="#gambar-5">
                     <img src="img/thumb/5.png" alt="5">
-                    <span>Hitam</span>
+                    <span>Hp</span>
                 </a>
                 <div class="overlay" id="gambar-5">
                     <a href="#" class="close">X close</a>
@@ -139,7 +151,7 @@
             <li>
                 <a href="#gambar-6">
                     <img src="img/thumb/6.png" alt="6">
-                    <span>Hitam</span>
+                    <span>Pantai</span>
                 </a>
                 <div class="overlay" id="gambar-6">
                     <a href="#" class="close">X close</a>
@@ -151,7 +163,7 @@
             <li>
                 <a href="#gambar-7">
                     <img src="img/thumb/7.png" alt="7">
-                    <span>Hitam</span>
+                    <span>Degan</span>
                 </a>
                 <div class="overlay" id="gambar-7">
                     <a href="#" class="close">X close</a>
@@ -163,7 +175,7 @@
             <li>
                 <a href="#gambar-8">
                     <img src="img/thumb/8.png" alt="8">
-                    <span>Hitam</span>
+                    <span>Kereta</span>
                 </a>
                 <div class="overlay" id="gambar-8">
                     <a href="#" class="close">X close</a>
@@ -180,8 +192,9 @@
 
 
 
-    <div class="container lima">
+    <div class="container lima" id="Contact">
         <h2>Contact Me</h2>
+        <div class="garis"></div>
         <form>
             <label for="name" >Nama Lengkap</label>
             <input type="text" id="name" name="name">
@@ -205,5 +218,14 @@
         </footer>
     </div>
    
+<script>
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('slide');
+    });
+</script>
+
 </body>
 </html>

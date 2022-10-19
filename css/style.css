@@ -7,31 +7,44 @@ body {
 }
 
 
-/* navbar */
-nav {
+/* .navbarbar */
+
+
+.navbar {
     display: flex;
+    position: fixed;
     background-color: blue;
-    justify-content: space-around;
-    padding: 13px 0;
+    justify-content: space-between;
+    /* padding: 13px 0; */
     color: white;
+    height: 50px;
+    align-items: center;
+    right: 0;
+    left: 0;
+    z-index: 3;
 }
-nav ul {
+.navbar ul {
     display: flex;
     list-style: none;
-    width: 25%;
+    width: 30%;
     justify-content: space-between;
-    margin-left: 300px;
+    margin-right: 4%;
+    /* margin-left: 300px; */
+}
+.navbar .logo {
+    margin-left: 4%;
 }
 h1 {
-    margin-right: 200px;
+    /* margin-right: 200px; */
     font-size: 20px;
+    
 }
-nav ul li a {
+.navbar ul li a {
     text-decoration: none;
     font-size: .8em;   
 }
     /* animasi link  */
-nav a:hover,
+.navbar a:hover,
 footer a:hover {
     background-color: aqua;
     color: black;
@@ -44,7 +57,65 @@ a {
     transition: .5s;
     color: white;
 }
-/* akhir navbar */
+
+    /* hmburger menu */
+.menu-toggle {
+    margin-right: 4%;
+    display: none;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    position: relative;
+
+}
+.menu-toggle input {
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    opacity: 0;
+    left: -5px;
+    top: -1px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all .5s;
+    
+}
+
+
+
+/* hamburger animasi  */
+.menu-toggle span:nth-child(2) {
+    transform-origin:0 0 ;
+}
+
+.menu-toggle input:checked  ~ span:nth-child(2){
+    background-color: black;
+    transform: rotate(45deg) translate(-1px, -2px);
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin:0 100% ;
+}
+
+.menu-toggle input:checked  ~ span:nth-child(4){
+    background-color: black;
+    transform: rotate(-45deg) translate(-1px, 2px);
+}
+.menu-toggle input:checked  ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+
+
+
+/* akhir .navbarbar */
 
 
 
@@ -53,9 +124,11 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    justify-content: center;
+
 }
 .satu h2 {
-    margin: 20px 0;
+    margin: 10px 0;
     margin-bottom: 2px;
 }
 .satu span {
@@ -69,11 +142,11 @@ a {
     /* about me */
 .dua h2 {
     margin-top: -60px;
-    margin-bottom: 60px;
 }
 .dua .tentang {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 .dua .tentang p {
     font-size: 14px;
@@ -92,13 +165,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 
 }
 .tiga .card {
     margin-top: 40px;
     width: 100px;
-    height: 150px;
+    /* height: 150px; */
     border: 2px solid black;
     background-color: #f8f2f2;
     border-radius: 4px;
@@ -116,7 +189,8 @@ a {
 /* container empat */
 
 .empat h2{
-    margin: 20px 0;
+    margin-top: 20px;
+    
 }
 .empat ul li {
     margin: 12px;
@@ -138,6 +212,7 @@ a {
     flex-direction: column;
     width: 500px;
     margin: auto;
+
 }
 .lima label {
     text-align: left;
@@ -157,7 +232,7 @@ a {
     border-radius: 10px;
 }
 form .from-border {
-    width: 500px;
+    /* width: 500px; */
     height: 1px;
     background: -webkit-linear-gradient(left, rgb(174, 194, 209), blue );
 }
@@ -184,7 +259,7 @@ button:hover {
 .enam footer {
     color: white;
     font-size: 13px;
-    padding: 20px;
+    padding: 17px;
 }
 /* akhir container enam */
 
@@ -192,19 +267,25 @@ button:hover {
 
 /* container */
 .container {
+    /* display: grid; */
     text-align: center;
     padding-top: 20px;
     background-color: rgb(228, 239, 248);
 }
 .satu {
     height: 350px;
+    padding-top: 100px;
 }
 
  .dua{
     background-color: #f8f2f2;
     padding-top: 100px;
+    padding-bottom: 100px;
     box-sizing: border-box;
-    height: 400px;
+    /* height: 400px; */
+}
+.tiga {
+    padding-bottom: 50px;
 }
 .empat {
     background-color: #f8f2f2;
@@ -219,3 +300,96 @@ button:hover {
     padding-top: 0;
 
 }
+
+
+ .garis {
+    width: 160px;
+    height: 4px;
+    background-color: blue;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+/* rsesponsif break point  */
+
+@media  (min-width: 992px) {
+    .gallery {
+        width: 600px;
+    
+    }
+
+}
+@media  (max-width: 991px) {
+    .bingkai {
+        width: 600px;
+        
+    }
+    .gallery {
+        width: 460px;
+    }
+    .bingkai .card {
+        margin: 10px;
+    }
+    .navbar ul {
+        width: 40%;
+    }
+    
+}
+@media  (max-width: 759px) {
+    .bingkai {
+        width: 350px;
+    }
+    .bingkai .card {
+        margin: 10px;
+    }
+    .gallery {
+        width: 300px;
+        
+        }
+    .lima form {
+        width: 200px;
+
+    }
+    .navbar {
+        height: 40px;
+    }
+    .navbar h1 {
+        font-size: 16px;
+    }
+    .navbar ul {
+        position: absolute;
+        /* width: 40%; */
+        margin: 0;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: blue;
+        height: 50vh;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateY(-100%);
+        /* transform: translateX(100%); */
+        transition: all .8s;
+        border-radius: 0 0 0 30px;
+        opacity: 0;
+        box-shadow: 0 2px 2px black;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .navbar ul.slide {
+        transform: translateY(0);
+        /* transform: translateX(0); */
+        opacity: 1;
+    }
+
+    .enam footer {
+        font-size: 11px;
+        padding: 15px;
+    }
+}
+
