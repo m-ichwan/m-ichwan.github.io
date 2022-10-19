@@ -322,6 +322,10 @@ button:hover {
     
     }
 
+    .next, .prev {
+    top: 45%;
+
+    }
 }
 @media  (max-width: 991px) {
     .bingkai {
@@ -337,6 +341,7 @@ button:hover {
     .navbar ul {
         width: 40%;
     }
+
     
 }
 @media  (max-width: 759px) {
@@ -348,8 +353,27 @@ button:hover {
     }
     .gallery {
         width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
         
-        }
+     }
+     .overlay img {
+        max-height: 100%;
+        max-width: 100%;
+        box-shadow: 1px 1px 4px white;
+        margin: 10px;
+    
+    }
+
+    .next, .prev {
+        bottom: 7%;
+        left: 50%;
+    } 
+    
+
+
+
+
     .lima form {
         width: 200px;
 
