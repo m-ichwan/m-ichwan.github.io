@@ -120,7 +120,7 @@ a {
 
 
 /* container satu */
-.satu img {
+.satu .profile {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -133,6 +133,17 @@ a {
 }
 .satu span {
     font-size: 14px;
+}
+
+.satu .akun-sosmed {
+    margin-top: 5px;
+}
+
+.satu .akun-sosmed img{
+    width: 50px;
+    filter: drop-shadow(3px 3px 10px white);
+    margin: 10px;
+    
 }
 /* akhir container satu */
 
@@ -345,6 +356,15 @@ button:hover {
     
 }
 @media  (max-width: 759px) {
+    .satu .akun-sosmed {
+        margin-top: 10px;
+    }
+
+    .satu .akun-sosmed img {
+        width: 35px;
+       
+    }
+
     .bingkai {
         width: 350px;
     }
