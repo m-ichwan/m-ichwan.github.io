@@ -379,8 +379,7 @@ button:hover {
      }
      .overlay img {
         max-height: 100%;
-        max-width: 100%;
-        box-shadow: 1px 1px 4px white;
+        max-width: 90%;
         margin: 10px;
     
     }
