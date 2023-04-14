@@ -235,6 +235,9 @@ a {
     background: rgb(228, 239, 248);
     padding-top: 20px;
 }
+.form .jeniskelamin {
+    flex-direction: row;
+}
 .lima textarea {
     border: 1px solid blue;
     height: 100px;
@@ -271,6 +274,10 @@ button:hover {
     color: white;
     font-size: 13px;
     padding: 17px;
+}
+
+footer a {
+    text-decoration: none;
 }
 /* akhir container enam */
 

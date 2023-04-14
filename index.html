@@ -32,9 +32,9 @@
     </nav>
 
     <div class="container satu" id="Home">
-        <img src="img/profile.png" alt="profile" class="profile">
+        <img src="img/c.jpeg" alt="profile" class="profile">
         <h2>M. Ichwan Nur Rosidin</h2>
-        <span>Rebahan | Programmer</span>
+        <span>Lying around | eat | Programmer</span>
         <div class="akun-sosmed">
           <a href="https://www.facebook.com/profile.php?id=100005961108252"><img src="img/thumb/fb.png" alt=""></a>
           <a href="https://twitter.com/M_Ichwan9?t=Qh-jMj9L0jo45PJFGy8sUg&s=09"><img src="img/thumb/tw.png" alt=""></a>
@@ -201,24 +201,31 @@
         <div class="garis"></div>
         <form>
             <label for="name" >Nama Lengkap</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
             <div class="from-border"></div>
 
             <label for="email" >Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
             <div class="from-border"></div>
+            
+            <label  for="jeniskelamin"  >
+                
+                <input type="radio" id="lk" name="jeniskelamin">Pria
+                <input type="radio" id="pr" name="jeniskelamin">Wanita
+            </label>
+            <!-- <div class="from-border"></div> -->
             
             <label for="pesan" >Pesan</label>
             <textarea name="pesan" id="pesan" cols="10" rows="10"></textarea>
 
-            <button type="submit" name="submit" id="submit">Kirim</button>
+            <button type="submit" name="submit" id="kirim">Kirim</button>
         </form>
        
        
     </div>
     <div class="container enam">
         <footer>
-            <p>Created with by <a href="https://instagram.com/m.ichwan_rosidin">M. Ichwan</a></p>
+            <p>Created with by <a href="https://instagram.com/m.ichwan_rosidin">❤ M. Ichwan</a></p>
         </footer>
     </div>
    
@@ -230,6 +237,7 @@
         nav.classList.toggle('slide');
     });
 </script>
+<script src="script.js"></script>
 
 </body>
 </html>
